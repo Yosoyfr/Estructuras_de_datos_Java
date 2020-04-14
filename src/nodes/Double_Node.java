@@ -9,19 +9,22 @@ package nodes;
  *
  * @author Francisco Suarez
  */
-public class Simple_Node {
+public class Double_Node {
+
 	//El dato que contendra el nodo
 	private Object data;
 	//Enlace siguiente del nodo
-	private Simple_Node next;
+	private Double_Node next;
+	//Enlace anterior del nodo
+	private Double_Node previous;
 
 	//Constructor vacio del nodo
-	public Simple_Node() {
+	public Double_Node() {
 	}
 
-	public Simple_Node(Object data) {
+	public Double_Node(Object data) {
+		this.next = this.previous = null;
 		this.data = data;
-		this.next = null;
 	}
 
 	//Accesores y modificadores de los atributos del nodo
@@ -29,15 +32,24 @@ public class Simple_Node {
 		return data;
 	}
 
-	public void setData(int data) {
+	public void setData(Object data) {
 		this.data = data;
 	}
 
-	public Simple_Node getNext() {
+	public Double_Node getNext() {
 		return next;
 	}
 
-	public void setNext(Simple_Node next) {
+	public void setNext(Double_Node next) {
 		this.next = next;
 	}
+
+	public Double_Node getPrevious() {
+		return previous;
+	}
+
+	public void setPrevious(Double_Node previous) {
+		this.previous = previous;
+	}
+
 }

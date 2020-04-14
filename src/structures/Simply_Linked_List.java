@@ -133,6 +133,7 @@ public class Simply_Linked_List {
 		}
 	}
 
+	//Imprime los datos de la lista en consola
 	public void print() {
 		Simple_Node aux = this.first;
 		while (aux != null) {
