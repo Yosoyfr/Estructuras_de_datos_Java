@@ -57,6 +57,9 @@ public class Main {
 		CircularList.remove(60);
 		CircularList.print();
 		 */
+ 
+		 /*
+		 //Prubas lista circular doble
 		Doubly_Circular_List CircularList = new Doubly_Circular_List();
 		CircularList.add(6);
 		CircularList.add(5);
@@ -69,6 +72,9 @@ public class Main {
 		CircularList.remove(6);
 		CircularList.remove(40);
 		CircularList.print();
+		*/
+		 
+		 
 	}
 
 }
