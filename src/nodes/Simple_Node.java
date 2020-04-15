@@ -24,6 +24,12 @@ public class Simple_Node {
 		this.next = null;
 	}
 
+	public Simple_Node(Object data, Object type) {
+		this.data = data;
+		this.next = this;
+	}
+	
+	
 	//Accesores y modificadores de los atributos del nodo
 	public Object getData() {
 		return data;

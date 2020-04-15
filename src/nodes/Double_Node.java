@@ -27,6 +27,12 @@ public class Double_Node {
 		this.data = data;
 	}
 
+	public Double_Node(Object data, Object type) {
+		this.next = this;
+		this.previous = this;
+		this.data = data;
+	}
+
 	//Accesores y modificadores de los atributos del nodo
 	public Object getData() {
 		return data;

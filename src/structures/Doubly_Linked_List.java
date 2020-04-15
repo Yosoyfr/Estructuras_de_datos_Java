@@ -52,7 +52,7 @@ public class Doubly_Linked_List {
 	}
 
 	//Remover objeto de la lista
-	Object remove(Object element) {
+	public Object remove(Object element) {
 		Double_Node aux = search(element);
 		Object obj = null;
 		if (aux != null) {
@@ -64,7 +64,7 @@ public class Doubly_Linked_List {
 				} else {
 					this.first = null;
 				}
-			}else if (aux  == this.last) {
+			} else if (aux == this.last) {
 				this.last = this.last.getPrevious();
 				this.last.setNext(null);
 			} else {
@@ -76,12 +76,24 @@ public class Doubly_Linked_List {
 		}
 		return obj;
 	}
-	
+
 	//Imprime los datos de la lista en consola
 	public void print() {
 		Double_Node aux = this.first;
 		while (aux != null) {
-			System.out.println("El dato es: " + aux.getData());
+			String p = "";
+			if (aux.getPrevious() != null) {
+				p += "El anterior es: " + aux.getPrevious().getData();
+			} else {
+				p += "El anterior es: null";
+			}
+			p += " El dato es: " + aux.getData();
+			if (aux.getNext() != null) {
+				p += " El siguiente es: " + aux.getNext().getData();
+			}else {
+				p += " El siguiente es: null";
+			}
+			System.out.println(p);
 			aux = aux.getNext();
 		}
 	}

@@ -80,7 +80,7 @@ public class Simply_Linked_List {
 	}
 
 	//Busqueda en la lista (Retorna el nodo)
-	Simple_Node search(Object element) {
+	public Simple_Node search(Object element) {
 		Simple_Node index;
 		for (index = this.first; index != null; index = index.getNext()) {
 			if (element == index.getData()) {
